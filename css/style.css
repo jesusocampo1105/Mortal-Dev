@@ -2,7 +2,7 @@
    display: block;
    margin:0 auto;
    width: 320px ;
-   margin-top: 40%;
+   margin-top: 55%;
    justify-content: center;
    align-items: center;
    height: 180px; 
@@ -37,3 +37,4 @@
     border-radius: 4px;
     background-color: transparent;
 }
+
