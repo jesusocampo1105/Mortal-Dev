@@ -1,1 +1,2 @@
-console.log("Probando")
+const pelea = document.getElementById("pelea");
+
