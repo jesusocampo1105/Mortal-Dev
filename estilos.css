@@ -16,19 +16,37 @@
 }
 
 .poder{
-    height: 500px;
+    height: 200px;
     width: 80px;
     padding-left: -40px;
     background-image: url('img/poder.png');
     background-repeat: no-repeat;
-    animation: podere 1s steps(4) infinite;    
+    animation: lanzamiento 0.6s steps(4) infinite;    
 }
 
-@keyframes podere{
+@keyframes lanzamiento{
     0%{
         background-position-x: 0;
     }
     100%{
         background-position-x: -324px;
+    }
+}
+
+.rayos{
+    height: 500px;
+    width: 200px;
+    padding-left: -40px;
+    background-image: url('img/rayos.png');
+    background-repeat: no-repeat;
+    animation: luces 1.5s steps(10) infinite;    
+}
+
+@keyframes luces{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -828px;
     }
 }
