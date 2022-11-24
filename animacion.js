@@ -1,2 +1,1 @@
-const pelea = document.getElementById("pelea");
-
+//document.getElementById("pelea").style.backgroundColor = "red";

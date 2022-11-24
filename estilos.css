@@ -1,0 +1,17 @@
+.pelea{
+    height: 1000px;
+    width: 125px;
+    background-image: url('img/golpes.png');
+    background-repeat: no-repeat;
+    animation: golpe 1s steps(9) infinite;
+    
+}
+
+@keyframes golpe{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1116px;
+    }
+}
