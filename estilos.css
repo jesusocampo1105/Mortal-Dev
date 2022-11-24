@@ -1,10 +1,9 @@
 .pelea{
-    height: 1000px;
-    width: 125px;
+    height: 200px;
+    width: 126px;
     background-image: url('img/golpes.png');
     background-repeat: no-repeat;
-    animation: golpe 1s steps(9) infinite;
-    
+    animation: golpe 1s steps(9) 1;    
 }
 
 @keyframes golpe{
@@ -13,5 +12,23 @@
     }
     100%{
         background-position-x: -1116px;
+    }
+}
+
+.poder{
+    height: 500px;
+    width: 80px;
+    padding-left: -40px;
+    background-image: url('img/poder.png');
+    background-repeat: no-repeat;
+    animation: podere 1s steps(4) infinite;    
+}
+
+@keyframes podere{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -324px;
     }
 }
