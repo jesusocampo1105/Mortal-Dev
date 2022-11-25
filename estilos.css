@@ -1,6 +1,7 @@
 .pelea{
     height: 200px;
     width: 126px;
+    /*transform: scaleX(-1);*/
     background-image: url('img/golpes.png');
     background-repeat: no-repeat;
     animation: golpe 1s steps(9) 1;    
@@ -34,7 +35,7 @@
 }
 
 .rayos{
-    height: 500px;
+    height: 200px;
     width: 200px;
     padding-left: -40px;
     background-image: url('img/rayos.png');
@@ -50,6 +51,13 @@
         background-position-x: -828px;
     }
 }
+
+.detenido{
+    height: 140px;
+    width: 77px;
+    background-image: url('img/detenido.gif');
+}
+
 
 @media (min-width: 320px) {
 
