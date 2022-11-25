@@ -100,3 +100,40 @@ h1 {
     border: none;
     font-size: 40px;
 } 
+
+@media (min-width: 640px){
+    h1{
+        display: none;
+    }
+    h3 {
+        display: none;
+        
+    }
+    #field{
+        width: 60vw;
+        height: 80vh;
+    }
+    #add #nombre{
+        width: 280px;
+        height: 38px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    #add button{
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    #list #nombres{
+        width: 280px;
+        height: 38px;
+        margin-bottom: 0px;
+    }
+    
+    #play {
+        margin-left: 200px;
+        margin-top: -50px;
+    }
+    #play button{
+        width: 210px;
+    }
+}
