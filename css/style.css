@@ -148,6 +148,7 @@ h1 {
     }
     h3{
         display: block;
+        font-size: larger;
     }
     #field{
         margin-left: 15%;
@@ -177,5 +178,33 @@ h1 {
     }
     #add button{
         margin-left: 20px;
+    }
+}
+@media (min-width: 1280px){
+    #field{
+        width: 60vw;
+        text-align: center;
+        margin-left: 18%;
+    }
+    h1{
+        font-size: 80px;
+    }
+    #formulario h3{
+        font-size: 50px;
+    } 
+    #add #nombre{
+        margin-top: 50px;
+        height: 60px;
+        font-size: 30px;
+        margin-bottom: 90px;
+    }
+    #list #nombres{
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    #play button{
+        width: 400px;
+        height: 60px;
+        font-size: 50px;
     }
 }
