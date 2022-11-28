@@ -39,6 +39,12 @@ div.life-bar-filling{
     background-color: #C80000;
     border-radius: 100px;
 }
+/* Counter style */
+.counter{
+    color: white;
+    margin: 50%;
+    font-size: 347%;
+}
 
 @media (min-width: 320px) {
     body{
@@ -53,8 +59,4 @@ div.life-bar-filling{
 }  
 @media (min-width: 1280px) {
 }
-.counter{
-    color: blue;
-    margin: 50%;
-    font-size: 347%;
-}
+
