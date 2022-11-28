@@ -15,7 +15,7 @@
     .popUp{
         display: block;
         margin:0 auto;
-        width: 320px ;
+        width: 330px ;
         margin-top: 55%;
         justify-content: center;
         align-items: center;
@@ -56,9 +56,10 @@
      
      .body-final{
          background-image: url(/src/images/mortal-kombat.jpg);
+         
          background-repeat: no-repeat;
          background-position: center center;
-         height: 700px;
+         
      }
      
      .title-final{
@@ -67,7 +68,7 @@
          font-size: 65px;
          text-align: center;
          color: #F27405;
-         margin-top: 150px;
+         
      }
      .final-div{
          text-align: center;
@@ -84,7 +85,7 @@
          font-size: 40px;
          color: #FFF;
          border: 5px solid #FFF;
-         margin-top: 230px;
+         margin-top: 180px;
          margin-bottom: 30px;
      }
      
@@ -104,13 +105,52 @@
 
 }
 @media (min-width: 640px) {
-    
+    .popUp{
+        width: 570px ;
+        height: 270px; 
+        margin-top: 25%;
+    }
 
+    .img-calavera{
+        width: 150px;
+        height: 150px;
+    }
+    .popUp-text{
+        font-size: 25px;
+    }
+
+    .button-popUp{
+        width: 100px;
+        height: 45px;
+        font-size: 25px;
+    }
 }
-@media (min-width: 1025px) {
 
+@media (min-width: 1025px) {
+    .popUp{
+        width: 870px ;
+        height: 370px; 
+        margin-top: 15%;
+    }
+
+    .img-calavera{
+        width: 200px;
+        height: 200px;
+    }
+    .popUp-text{
+        font-size: 35px;
+    }
+
+    .button-popUp{
+        width: 150px;
+        height: 65px;
+        font-size: 35px;
+        border: solid #000000 5px;
+    }
 }
 @media (min-width: 1280px) {
-    
+    .popUp{
+        margin-top: 14%;
+    }
 }
 
