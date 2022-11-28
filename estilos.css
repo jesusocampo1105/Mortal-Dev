@@ -76,6 +76,24 @@
     }
 }
 
+.victima2{
+    height: 200px;
+    width: 62px;
+    transform: scaleX(-1);
+    background-image: url('img/victima2.png');
+    background-repeat: no-repeat;
+    animation: electrocutada .6s steps(4) infinite;
+}
+
+@keyframes electrocutada{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -254px;
+    }
+}
+
 
 @media (min-width: 320px) {
 
