@@ -94,6 +94,41 @@
     }
 }
 
+.victima3{
+    height: 200px;
+    width: 62px;
+    transform: scaleX(-1);
+    background-image: url('img/victima3.png');
+    background-repeat: no-repeat;
+    animation: noqueado 1s steps(7) infinite;
+}
+
+@keyframes noqueado{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -490px;
+    }
+}
+
+.victima4{
+    height: 200px;
+    width: 100px;
+    transform: scaleX(-1);
+    background-image: url('img/victima4.png');
+    background-repeat: no-repeat;
+    animation: sincabe 1.4s steps(10) infinite;
+}
+
+@keyframes sincabe{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1001px;
+    }
+}
 
 @media (min-width: 320px) {
 
