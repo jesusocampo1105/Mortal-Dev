@@ -150,6 +150,9 @@ h1 {
         display: block;
         font-size: larger;
     }
+    #list{
+        height: 40vh;
+    }
     #field{
         margin-left: 15%;
         height: 60vh;
@@ -183,6 +186,7 @@ h1 {
 @media (min-width: 1280px){
     #field{
         width: 60vw;
+        height: 65vh;
         text-align: center;
         margin-left: 18%;
     }
@@ -207,4 +211,8 @@ h1 {
         height: 60px;
         font-size: 50px;
     }
+    #list{
+        height: 40vh;
+    }
+    
 }
