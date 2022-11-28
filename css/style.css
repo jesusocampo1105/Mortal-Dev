@@ -56,18 +56,18 @@
      
      .body-final{
          background-image: url(/src/images/mortal-kombat.jpg);
-         
          background-repeat: no-repeat;
-         background-position: center center;
+         background-position: center -105px;
          
      }
      
      .title-final{
          font-family: 'mortal-kombat-1';
          font-weight: 400;
-         font-size: 65px;
+         font-size: 60px;
          text-align: center;
          color: #F27405;
+         margin-top: 120px;
          
      }
      .final-div{
@@ -85,8 +85,8 @@
          font-size: 40px;
          color: #FFF;
          border: 5px solid #FFF;
-         margin-top: 180px;
-         margin-bottom: 30px;
+         margin-top: 220px;
+         margin-bottom: 20px;
      }
      
      .button-playagain{
@@ -123,6 +123,21 @@
         width: 100px;
         height: 45px;
         font-size: 25px;
+    }
+    .title-final{
+        font-size: 70px;
+    }
+    .text-eliminados{
+        width: 290px;
+        height: 50px;
+        font-size: 40px; 
+    }
+    
+    .button-playagain{
+        width: 255px;
+        height: 55px;
+        font-size: 26px;
+    
     }
 }
 
