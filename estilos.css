@@ -118,7 +118,14 @@
     transform: scaleX(-1);
     background-image: url('img/victima4.png');
     background-repeat: no-repeat;
-    animation: sincabe 1.4s steps(10) infinite;
+    animation: sincabe 1.5s steps(10) infinite;
+}
+
+.detenidov{
+    height: 130px;
+    width: 70px;
+    transform: scaleX(-1);
+    background-image: url('img/detenidov.gif');
 }
 
 @keyframes sincabe{
