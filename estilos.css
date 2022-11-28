@@ -35,7 +35,7 @@
 }
 
 .rayos{
-    height: 200px;
+    height: 100px;
     width: 200px;
     padding-left: -40px;
     background-image: url('img/rayos.png');
@@ -56,6 +56,24 @@
     height: 140px;
     width: 77px;
     background-image: url('img/detenido.gif');
+}
+
+.victima{
+    height: 200px;
+    width: 90px;
+    transform: scaleX(-1);
+    background-image: url('img/victima1.png');
+    background-repeat: no-repeat;
+    animation: golpiza .5s steps(4) 2;    
+}
+
+@keyframes golpiza{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -380px;
+    }
 }
 
 
