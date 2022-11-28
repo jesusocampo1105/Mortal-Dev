@@ -1,5 +1,5 @@
 //Contador de juego
-/* 
+
 const numero = document.querySelector(".counter");
 let cantidad = 0;
 
@@ -13,4 +13,4 @@ let tiempo = setInterval(() =>{
         clearInterval(tiempo)
     }
     
-}, 1000); */
+}, 1000);
