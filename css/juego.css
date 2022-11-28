@@ -1,3 +1,57 @@
+body{
+    background-image: url(../src/images/land.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.player-names{
+    display: flex;
+
+    margin: auto;
+    width: 90%;
+}
+.player-names h2{
+    color: #ffffff;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+
+}
+
+
+div.live-bars-container{
+    display: flex;
+    width: 90%;
+    height: 5%;
+    margin: auto;
+    justify-content: space-between;
+}
+div.life-bar{
+    width: 30%;
+    background-color: #000000;
+    border-radius: 100px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+}
+div.life-bar-filling{
+    height: 100%;
+    width: 100%;
+    background-color: #C80000;
+    border-radius: 100px;
+}
+
+@media (min-width: 320px) {
+    body{
+        height: 80vh;
+    }
+}  
+@media (min-width: 640px) {
+
+}  
+@media (min-width: 1025px) {
+
+}  
+@media (min-width: 1280px) {
 
 .counter{
     color: blue;
