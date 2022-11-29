@@ -25,6 +25,11 @@
     animation: lanzamiento 0.7s steps(4) infinite;    
 }
 
+.pause{
+    animation-play-state: paused;
+    display: none;
+}
+
 @keyframes lanzamiento{
     0%{
         background-position-x: 0;
