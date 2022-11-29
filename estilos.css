@@ -22,7 +22,7 @@
     padding-left: -40px;
     background-image: url('img/poder.png');
     background-repeat: no-repeat;
-    animation: lanzamiento 0.6s steps(4) infinite;    
+    animation: lanzamiento 0.7s steps(4) infinite;    
 }
 
 @keyframes lanzamiento{
