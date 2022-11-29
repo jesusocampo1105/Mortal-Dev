@@ -4,12 +4,27 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
 }
+
+@font-face{
+    font-family: mortalK1;
+    src: url(/src/fonts/mk1.ttf);
+}
+@font-face{
+    font-family: mortalK2;
+    src: url(/css/mk2.ttf);
+}
+@font-face{
+    font-family: mortalK3;
+    src: url(/css//MK4.TTF);
+}
+
 .player-names{
     display: flex;
     justify-content: space-around;
 }
 .player-names h2{
     color: #ffffff;
+    font-family: mortalK1;
 }
 
 div.live-bars-container{
@@ -36,6 +51,7 @@ div.life-bar-filling{
     color: white;
     margin: 46%;
     font-size: 347%;
+    font-family: mortalK1;
 }
 .containerCounter{
     text-align: center;
