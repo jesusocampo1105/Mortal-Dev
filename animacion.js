@@ -3,12 +3,12 @@ var boton = document.getElementById("pausa");
 
 if(personaje.classList && personaje && boton){
     boton.onclick = function(){
-        if(this.value == 'pause'){
+        if(this.value == 'Kill'){
             personaje.classList.add('pause');
-            this.value = 'play';
+            this.value = 'Finish Him';
         }else{
             personaje.classList.remove('pause');
-            this.value = 'pause';
+            this.value = 'Kill';
         }
     }
 }
