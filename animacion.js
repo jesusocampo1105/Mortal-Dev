@@ -9,16 +9,16 @@ function detener(){
 
 function lanzar(){
     if(this.value == 'Kill'){
-        personaje.classList.add('pause');
+        punos.classList.add('pause');
         this.value = 'Finish Him';
         detener();
         //personaje.style.display = 'none';
     }else{
-        personaje.classList.remove('pause');
+        punos.classList.remove('pause');
         this.value = 'Kill';
     }
 }
 
-if(personaje.classList && personaje && boton){
+if(punos.classList && punos && boton){
     boton.addEventListener("click", lanzar);  
 }

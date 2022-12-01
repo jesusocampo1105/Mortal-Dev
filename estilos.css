@@ -4,7 +4,7 @@
     /*transform: scaleX(-1);*/
     background-image: url('img/golpes.png');
     background-repeat: no-repeat;
-    animation: golpe 1s steps(9) 1;    
+    animation: golpe 1s steps(9) paused;    
 }
 
 @keyframes golpe{
