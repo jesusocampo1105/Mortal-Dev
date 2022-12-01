@@ -1,5 +1,5 @@
 .pelea{
-    height: 200px;
+    height: 140px;
     width: 126px;
     background-image: url('img/golpes.png');
     background-repeat: no-repeat;
@@ -22,7 +22,8 @@
     padding-left: -40px;
     background-image: url('img/poder.png');
     background-repeat: no-repeat;
-    animation: lanzamiento 0.5s steps(4) paused;    
+    animation: lanzamiento 0.5s steps(4) paused;
+    display: none;    
 }
 
 .pause{
