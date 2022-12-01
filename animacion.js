@@ -5,14 +5,17 @@ var detenidog = document.getElementById("detenido");
 
 function detener(){
     detenidog.style.display = 'none';
+    personaje.style.display = 'none';
 }
+
+
 
 function lanzar(){
     if(this.value == 'Kill'){
+        detener();
+        pelea.style.display = 'block';
         punos.classList.add('pause');
         this.value = 'Finish Him';
-        detener();
-        //personaje.style.display = 'none';
     }else{
         punos.classList.remove('pause');
         this.value = 'Kill';
