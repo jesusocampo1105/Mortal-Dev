@@ -41,6 +41,12 @@ div.life-bar-filling{
     border-radius: 100px;
 }
 
+.counter{
+    color: blue;
+    margin: 50%;
+    font-size: 347%;
+}
+
 @media (min-width: 320px) {
     body{
         height: 80vh;
