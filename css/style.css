@@ -228,3 +228,162 @@ h1 {
     font-family: mortal-kombat-4;
     src: url(../src/fonts/MK4.TTF);
 }
+
+@media (min-width: 320px) {
+    .popUp{
+        display: block;
+        margin:0 auto;
+        width: 330px ;
+        margin-top: 55%;
+        justify-content: center;
+        align-items: center;
+        height: 180px; 
+        background: linear-gradient(281.16deg, rgba(242, 116, 5, 0.9) 2.22%, rgba(149, 1, 7, 0.9) 99.22%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+     }
+     
+     .img-calavera{
+         width: 90px;
+         height: 90px;
+         display: block;
+         margin: 0 auto;
+     }
+     
+     .popUp-text{
+         display: block;
+         font-family: 'Inter';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 18px;
+         text-align: center;
+         margin-top: 0px;
+     }
+     
+     .button-popUp{
+         width: 75px;
+         height: 30px;
+         display: block;
+         margin: 0 auto;
+         border: solid #000000 3px;
+         border-radius: 4px;
+         background-color: transparent;
+         font-family: "mortal-kombat-4";
+         font-size: 18px;
+     }
+     
+     .body-final{
+         background-image: url(/src/images/mortal-kombat.jpg);
+         background-repeat: no-repeat;
+         background-position: center -105px;
+         
+     }
+     
+     .title-final{
+         font-family: 'mortal-kombat-1';
+         font-weight: 400;
+         font-size: 60px;
+         text-align: center;
+         color: #F27405;
+         margin-top: 120px;
+         
+     }
+     .final-div{
+         text-align: center;
+         justify-content: center;
+         align-items: center;
+     }
+     .text-eliminados{
+         width: 270px;
+         height: 70px;
+         margin: 0 auto;
+         border-radius: 5px;
+         font-family: 'mortal-kombat-4';
+         font-weight: 400;
+         font-size: 40px;
+         color: #FFF;
+         border: 5px solid #FFF;
+         margin-top: 220px;
+         margin-bottom: 20px;
+     }
+     
+     .button-playagain{
+         width: 240px;
+         height: 55px;
+         margin: 0 auto;
+         border-radius: 4px;
+         background-color: transparent;
+         color: #FFF;
+         border: 3px solid #FFF;
+         font-family: 'mortal-kombat-4';
+         font-weight: 400;
+         font-size: 23px;
+     
+     }
+
+}
+@media (min-width: 640px) {
+    .popUp{
+        width: 570px ;
+        height: 270px; 
+        margin-top: 25%;
+    }
+
+    .img-calavera{
+        width: 150px;
+        height: 150px;
+    }
+    .popUp-text{
+        font-size: 25px;
+    }
+
+    .button-popUp{
+        width: 100px;
+        height: 45px;
+        font-size: 25px;
+    }
+    .title-final{
+        font-size: 70px;
+    }
+    .text-eliminados{
+        width: 290px;
+        height: 50px;
+        font-size: 40px; 
+    }
+    
+    .button-playagain{
+        width: 255px;
+        height: 55px;
+        font-size: 26px;
+    
+    }
+}
+
+@media (min-width: 1025px) {
+    .popUp{
+        width: 870px ;
+        height: 370px; 
+        margin-top: 15%;
+    }
+
+    .img-calavera{
+        width: 200px;
+        height: 200px;
+    }
+    .popUp-text{
+        font-size: 35px;
+    }
+
+    .button-popUp{
+        width: 150px;
+        height: 65px;
+        font-size: 35px;
+        border: solid #000000 5px;
+    }
+}
+@media (min-width: 1280px) {
+    .popUp{
+        margin-top: 14%;
+    }
+}
+
