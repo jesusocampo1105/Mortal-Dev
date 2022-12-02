@@ -69,7 +69,8 @@
     transform: scaleX(-1);
     background-image: url('img/victima1.png');
     background-repeat: no-repeat;
-    animation: golpiza .5s steps(4) 2;    
+    animation: golpiza .5s steps(4) 2;
+    display: none;    
 }
 
 @keyframes golpiza{
