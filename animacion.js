@@ -11,10 +11,6 @@ function detener(){
     detenidov.style.display = 'none';    
 }
 
-function noqueado(){
-    victimagol.style.display = 'none';
-}
-
 function lanzar(){
     if(this.value == 'Kill'){
         detener();
@@ -23,8 +19,8 @@ function lanzar(){
         punos.classList.add('pause');
         this.value = 'Finish Him';        
     }else if(this.value == 'Finish Him'){
-            noqueado();
             pelea.style.display = 'none';
+            victimagol.style.display = 'none';
             personaje.style.display = 'block';
             personaje.classList.add('pause');
             boton.style.display = 'none';
