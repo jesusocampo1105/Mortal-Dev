@@ -45,6 +45,18 @@ div.life-bar-filling{
     body{
         height: 80vh;
     }
+    div.you-life-bar{
+        display: none;
+    }
+    div.player-names .you-text{
+        display: none;
+    }
+    div.player-names h2{
+        width: 100%;
+    }
+    div.life-bar-changing{
+        width: 100%;
+    }
 }  
 @media (min-width: 640px) {
 
