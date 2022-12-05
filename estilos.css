@@ -1,7 +1,7 @@
 .pelea{
-    height: 140px;
-    width: 126px;
-    background-image: url('img/golpes.png');
+    height: 370px;
+    width: 325px;
+    background-image: url('img/golpes(720).png');
     background-repeat: no-repeat;
     animation: golpe 1s steps(9) paused;
     display: none;    
@@ -12,7 +12,7 @@
         background-position-x: 0;
     }
     100%{
-        background-position-x: -1116px;
+        background-position-x: -2971px;
     }
 }
 
