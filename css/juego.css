@@ -1,14 +1,26 @@
 body{
-    background-image: url(../src/images/land.png);
+    background-image: url(../src/images/LandMobile.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    height: 100vh;
 }
+
+@font-face{
+    font-family: mortalK1;
+    src: url(/src/fonts/mk1.ttf);
+}
+@font-face{
+    font-family: mortalK2;
+    src: url(/css/mk2.ttf);
+}
+@font-face{
+    font-family: mortalK3;
+    src: url(/css//MK4.TTF);
+}
+
 .player-names{
     display: flex;
-
-    margin: auto;
-    width: 90%;
+    justify-content: space-around;
 }
 .player-names h2{
     color: #ffffff;
@@ -17,15 +29,12 @@ body{
     text-align: center;
     font-family: mortal-kombat-4;
 
+    font-family: mortalK1;
 }
-
 
 div.live-bars-container{
     display: flex;
-    width: 90%;
-    height: 5%;
-    margin: auto;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 div.life-bar{
     width: 30%;
@@ -33,12 +42,42 @@ div.life-bar{
     border-radius: 100px;
     border: 1px solid #ffffff;
     box-sizing: border-box;
+    height: 20px;
 }
 div.life-bar-filling{
     height: 100%;
     width: 100%;
     background-color: #C80000;
     border-radius: 100px;
+}
+.life-bar:nth-child(2) .life-bar-filling{
+    animation: life 4s forwards;
+}
+@keyframes life{
+    0%{
+        width: 100%;
+    }
+    30%{
+        width: 70%;
+    }
+    60%{
+        width: 50%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+
+/* Counter style */
+.counter{
+    color: white;
+    margin: 46%;
+    font-size: 347%;
+
+    font-family: mortalK1;
+}
+.containerCounter{
+    text-align: center;
 }
 
 .counter{
@@ -48,8 +87,11 @@ div.life-bar-filling{
 }
 
 @media (min-width: 320px) {
-    body{
-        height: 80vh;
+    .counter{
+        font-size: 194%;
+    }
+    .player-names h2{
+        font-size: 14px;
     }
     div.you-life-bar{
         display: none;
@@ -64,12 +106,29 @@ div.life-bar-filling{
         width: 100%;
     }
 }  
+
 @media (min-width: 640px) {
-
+    .counter{
+        font-size: 266%;
+    }
+    .player-names h2{
+        font-size: 20px;
+    }
 }  
+
 @media (min-width: 1025px) {
-
+    .counter{
+        font-size: 422%;
+    }
+    .player-names h2{
+        font-size: 30px;
+    }
 }  
-@media (min-width: 1280px) {
 
+@media (min-width: 1280px) {
+    .counter{
+        font-size: 500%;
+    }
+    
 }
+

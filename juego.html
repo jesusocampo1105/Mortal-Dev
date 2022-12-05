@@ -4,26 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/juego.css">
+    <link href="estilos.css" type="text/css" rel="stylesheet">
     <title>MortalDev</title>
 </head>
 <body>
+    <section class="containerCounter">
+        <span class="counter"></span>
+    </section>
+    
     <div class="player-names">
-        <h2 class="you-text">YOU</h2>
+        <h2>YOU</h2>
         <h2>List Name</h2>
     </div>
     <div class="live-bars-container">
-        <div class="life-bar you-life-bar">
+        <div class="life-bar">
             <div class="life-bar-filling"></div>
         </div>
-        <span lass="counter"></span>
-        <div class="life-bar life-bar-changing">
+        
+        <div class="life-bar">
             <div class="life-bar-filling"></div>
         </div>
     </div>
     
+    <div>
+        <div class="detenido" id="detenido">
 
+        </div>
+        <div class="pelea" id="pelea">
+            
+        </div>
+        <div class="poder" id="poder">
+            
+        </div>
+        <div><input type="button" id="pausa" value="Kill"></div>
+        <div class="rayos">
+            
+        </div>        
+    </div>
+    <div>
+        <div class="detenidov" id="detenidov">
+
+        </div>
+        <div class="victima" id="victimagol">
+
+        </div>
+        <div class="victima3">
+
+        </div>
+        <div class="victima2">
+
+        </div>        
+        <div class="victima4">
+
+        </div>        
+    </div>
+
+    <script src="animacion.js"></script>
     <script src="./js/juego.js"></script>
+
 </body>
 </html>
