@@ -45,7 +45,8 @@
     padding-left: -40px;
     background-image: url('img/rayos.png');
     background-repeat: no-repeat;
-    animation: luces 1.5s steps(10) infinite;    
+    animation: luces 1.5s steps(10) forwards;
+    display: none;    
 }
 
 @keyframes luces{
@@ -54,6 +55,7 @@
     }
     100%{
         background-position-x: -828px;
+        transform: translateX(100%);
     }
 }
 
@@ -88,7 +90,8 @@
     transform: scaleX(-1);
     background-image: url('img/victima2.png');
     background-repeat: no-repeat;
-    animation: electrocutada .6s steps(4) infinite;
+    animation: electrocutada .6s steps(4) 3;
+    display: none;
 }
 
 @keyframes electrocutada{

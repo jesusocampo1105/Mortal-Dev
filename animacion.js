@@ -4,6 +4,8 @@ var punos = document.getElementById("pelea");
 var detenidog = document.getElementById("detenido");
 var detenidov = document.getElementById("detenidov");
 var victimagol = document.getElementById("victimagol");
+var rayos = document.getElementById("rayos");
+var electrocutado = document.getElementById("electrocutado");
 
 
 function detener(){
@@ -22,6 +24,8 @@ function lanzar(){
             pelea.style.display = 'none';
             victimagol.style.display = 'none';
             personaje.style.display = 'block';
+            rayos.style.display = 'block';
+            electrocutado.style.display = 'block';
             personaje.classList.add('pause');
             boton.style.display = 'none';
         
