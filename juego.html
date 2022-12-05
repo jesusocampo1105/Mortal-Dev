@@ -8,14 +8,19 @@
     <link href="estilos.css" type="text/css" rel="stylesheet">
     <title>MortalDev</title>
 </head>
-<body>
+<body onload="addName()">
+
+    <audio id="audio" autoplay loop>
+        <source src="./src/sounds/Musica M.K.mp3" type="audio/mpeg">
+    </audio>
+
     <section class="containerCounter">
         <span class="counter"></span>
     </section>
     
     <div class="player-names">
         <h2>YOU</h2>
-        <h2 class="namePlayers">List Name</h2>
+        <h2 id="namePlayers"></h2>
     </div>
     <div class="live-bars-container">
         <div class="life-bar">

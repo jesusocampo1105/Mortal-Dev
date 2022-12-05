@@ -67,11 +67,13 @@ function deleteButon(){
             playButton.setAttribute("href", "../juego.html");
         }
     }
+
     /* Agregando los jugadores a la barra */
 
-    let namesPlayers = document.querySelector(".namePlayers");
+    let prueba = [1,2,3,4,5,6];
 
     function addName() {
-        namesPlayers.textContent = namesPlayers
+        let namesPlayers = document.getElementById("namePlayers");
+        namesPlayers.innerText = prueba;
     }
     
