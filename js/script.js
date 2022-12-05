@@ -61,8 +61,17 @@ function deleteButon(){
         });
     });
 
+
     function goToJuegoHtml(){
         if(playersBeta.length >= 1){
             playButton.setAttribute("href", "../juego.html");
         }
     }
+    /* Agregando los jugadores a la barra */
+
+    let namesPlayers = document.querySelector(".namePlayers");
+
+    function addName() {
+        namesPlayers.textContent = namesPlayers
+    }
+    
