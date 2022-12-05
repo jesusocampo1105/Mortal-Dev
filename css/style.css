@@ -88,7 +88,6 @@ a{
 }
 
 #play button{
-#play button {
     width: 150px;
     background-color: transparent;
     color: #F27405;
@@ -260,8 +259,6 @@ a{
     }
     #play button{
         font-size: 55px;
-
-    #play button {
         width: 400px;
         height: 60px;
         font-size: 50px;
