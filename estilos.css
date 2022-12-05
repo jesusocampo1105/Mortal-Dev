@@ -123,12 +123,39 @@
 }
 
 .victima4{
-    height: 200px;
-    width: 100px;
+    height: 370px;
+    width: 145px;
     transform: scaleX(-1);
-    background-image: url('img/victima4.png');
+    background-image: url('img/victima4(720).png');
     background-repeat: no-repeat;
-    animation: sincabe 1.5s steps(10) infinite;
+    animation: sincabe 1s steps(4) infinite;
+}
+
+@keyframes sincabe{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -611px;
+    }
+}
+
+.victima5{
+    height: 370px;
+    width: 380px;
+    transform: scaleX(-1);
+    background-image: url('img/victima5(720).png');
+    background-repeat: no-repeat;
+    animation: muerto 1s steps(7) infinite;
+}
+
+@keyframes muerto{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -2809px;
+    }
 }
 
 .detenidov{
@@ -137,15 +164,6 @@
     transform: scaleX(-1);
     background-image: url('img/detenidov.gif');
     background-size: 100%;
-}
-
-@keyframes sincabe{
-    0%{
-        background-position-x: 0;
-    }
-    100%{
-        background-position-x: -1001px;
-    }
 }
 
 @media (min-width: 320px) {
