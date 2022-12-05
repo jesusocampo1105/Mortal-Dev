@@ -27,9 +27,7 @@ addB.addEventListener("click", (e) => {
     li.appendChild(p);
     nombres.appendChild(li);
 
-    playersBeta.push(  
-        {    id: cont,
-        playerName: nombre.value});
+    playersBeta.push(nombre.value);
     cont += 1
     nombre.value = "";
     
@@ -56,6 +54,13 @@ function deleteButon(){
             let a = playersDelete[i];
             playersBeta[a] = null
         }
+
+        function guardarStorage(){
+            localStorage.setItem('list', JSON.stringify(playersBeta ));
+        }
+        guardarStorage();
+
+
     players = playersBeta.filter(function(x) {
             return x !== null;
         });
@@ -69,4 +74,6 @@ function deleteButon(){
     const playGameSoung = () =>{
         gameAduio.Play();
     }
+
+
 
