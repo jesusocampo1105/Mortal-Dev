@@ -70,21 +70,15 @@ div.life-bar-filling{
 
 /* Counter style */
 .counter{
-    color: white;
+    color: #ffffff;
     margin: 46%;
-    font-size: 347%;
-
+    font-size: 196%;
     font-family: mortalK1;
 }
 .containerCounter{
     text-align: center;
 }
 
-.counter{
-    color: blue;
-    margin: 50%;
-    font-size: 347%;
-}
 
 @media (min-width: 320px) {
     .counter{
