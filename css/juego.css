@@ -85,6 +85,36 @@ div.life-bar-filling{
     margin: 50%;
     font-size: 347%;
 }
+div.game-buttons{
+    display: flex;
+    justify-content: space-around;
+}
+#next-button{
+    font-size: 3em;
+    width: 8%;
+    display: block;
+    color: #ffffff;
+    border: solid #ffffff 3px;
+    border-radius: 4px;
+    background-color: transparent;
+    font-family: "mortal-kombat-4";
+}
+#kill-button{
+    font-size: 3em;
+    width: 8%;
+    display: block;
+    color: #ffffff;
+    border: solid #ffffff 3px;
+    border-radius: 4px;
+    background-color: transparent;
+    font-family: "mortal-kombat-4";
+}
+
+#next-button:hover, #kill-button:hover{
+    cursor: pointer;
+    border-color: #C80000;
+    color: #C80000;
+}
 
 @media (min-width: 320px) {
     .counter{
