@@ -14,8 +14,7 @@ let addB = document.getElementById('addBoton');
 let play = document.getElementById('play');
 let playButton = document.getElementById('playButton');
 
-
-addB.addEventListener("click", (e) => {
+addB.addEventListener('click', (e) => {
     e.preventDefault();
     const text = nombre.value;
 
@@ -27,16 +26,18 @@ addB.addEventListener("click", (e) => {
     li.appendChild(p);
     nombres.appendChild(li);
 
-    playersBeta.push(  
-        {    id: cont,
-        playerName: nombre.value});
+    playersBeta.push(
+        {
+            id: cont,
+            playerName: nombre.value
+        });
     cont += 1
     nombre.value = "";
-    
+
 });
 
 
-function deleteButon(){
+function deleteButon() {
     const botonDelete = document.createElement('button');
 
     botonDelete.textContent = 'X';
@@ -44,42 +45,42 @@ function deleteButon(){
 
     botonDelete.addEventListener('click', (e) => {
         const par = e.target.parentElement;
-        playersDelete.push(parseInt(par.id))  ;
+        playersDelete.push(parseInt(par.id));
         nombres.removeChild(par);
 
     });
     return botonDelete;
 }
 
-    play.addEventListener('click', (e) => {
-        for(i=0 ; i<playersDelete.length; i++ ){
-            let a = playersDelete[i];
-            playersBeta[a] = null
-        }
-    players = playersBeta.filter(function(x) {
-            return x !== null;
-        });
+play.addEventListener('click', (e) => {
+    for (i = 0; i < playersDelete.length; i++) {
+        let a = playersDelete[i];
+        playersBeta[a] = null
+    }
+    players = playersBeta.filter(function (x) {
+        return x !== null;
     });
+});
 
 
-    function goToJuegoHtml(){
-        if(playersBeta.length >= 1){
-            playButton.setAttribute("href", "../juego.html");
-        }
+function goToJuegoHtml() {
+    if (playersBeta.length >= 1) {
+        playButton.setAttribute("href", "../juego.html");
     }
-    let gameAduio = new Audio('../src/sounds/mortal-kombat-round-one.mp3');
-    const playGameSoung = () =>{
-        gameAduio.Play();
-    }
+}
+let gameAduio = new Audio('../src/sounds/mortal-kombat-round-one.mp3');
+const playGameSoung = () => {
+    gameAduio.Play();
+}
 
 
 
-    /* Agregando los jugadores a la barra */
+/* Agregando los jugadores a la barra */
 
-    let prueba = [1,2,3,4,5,6];
+let prueba = playersBeta;
+console.log(prueba);
 
-    function addName() {
-        let namesPlayers = document.getElementById("namePlayers");
-        namesPlayers.innerText = prueba;
-    }
-    
+function addName() {
+    let namesPlayers = document.getElementById("namePlayers");
+    namesPlayers.innerText = "";
+}

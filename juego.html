@@ -8,7 +8,8 @@
     <link href="estilos.css" type="text/css" rel="stylesheet">
     <title>MortalDev</title>
 </head>
-<body onload="addName()">
+<body onload="goToJuegoHtml()">
+    <section class="containerCounter"> </section>
 
     <audio id="audio" autoplay loop>
         <source src="./src/sounds/Musica M.K.mp3" type="audio/mpeg">
@@ -46,6 +47,10 @@
             </div>
         </div>
     </section>
+    <div class="game-buttons">
+        <button id="next-button">NEXT</button>
+        <button id="kill-button">KILL</button>
+    </div>
     <div>
         <!-- <div class="detenido" id="detenido">
 
@@ -81,7 +86,6 @@
 
         </div>        
     </div>
-
     <script src="animacion.js"></script>
     <script src="./js/juego.js"></script>
     <script src="./js/script.js"></script>
