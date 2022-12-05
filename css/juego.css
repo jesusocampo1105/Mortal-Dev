@@ -108,6 +108,7 @@ div.game-buttons{
     border-radius: 4px;
     background-color: transparent;
     font-family: "mortal-kombat-4";
+    margin-left: 100%;
 }
 
 #next-button:hover, #kill-button:hover{
