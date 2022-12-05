@@ -1,0 +1,158 @@
+.pelea{
+    height: 140px;
+    width: 126px;
+    background-image: url('img/golpes.png');
+    background-repeat: no-repeat;
+    animation: golpe 1s steps(9) paused;
+    display: none;    
+}
+
+@keyframes golpe{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1116px;
+    }
+}
+
+.poder{
+    height: 200px;
+    width: 80px;
+    padding-left: -40px;
+    background-image: url('img/poder.png');
+    background-repeat: no-repeat;
+    animation: lanzamiento 0.5s steps(4) paused;
+    display: none;    
+}
+
+.pause{
+    animation-play-state: running;    
+}
+
+@keyframes lanzamiento{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -324px;
+    }
+}
+
+.rayos{
+    height: 100px;
+    width: 200px;
+    padding-left: -40px;
+    background-image: url('img/rayos.png');
+    background-repeat: no-repeat;
+    animation: luces 1.5s steps(10) forwards;
+}
+
+@keyframes luces{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -828px;
+        transform: translateX(100%) ;
+    }
+}
+
+.detenido{
+    height: 140px;
+    width: 77px;
+    background-image: url('img/detenido.gif');
+}
+
+.victima{
+    height: 200px;
+    width: 90px;
+    transform: scaleX(-1);
+    background-image: url('img/victima1.png');
+    background-repeat: no-repeat;
+    animation: golpiza .5s steps(4) 2;
+    display: none;    
+}
+
+@keyframes golpiza{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -380px;
+    }
+}
+
+.victima2{
+    height: 200px;
+    width: 62px;
+    transform: scaleX(-1);
+    background-image: url('img/victima2.png');
+    background-repeat: no-repeat;
+    animation: electrocutada .6s steps(4) infinite;
+}
+
+@keyframes electrocutada{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -254px;
+    }
+}
+
+.victima3{
+    height: 200px;
+    width: 62px;
+    transform: scaleX(-1);
+    background-image: url('img/victima3.png');
+    background-repeat: no-repeat;
+    animation: noqueado 1s steps(7) infinite;
+}
+
+@keyframes noqueado{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -490px;
+    }
+}
+
+.victima4{
+    height: 200px;
+    width: 100px;
+    transform: scaleX(-1);
+    background-image: url('img/victima4.png');
+    background-repeat: no-repeat;
+    animation: sincabe 1.5s steps(10) infinite;
+}
+
+.detenidov{
+    height: 130px;
+    width: 70px;
+    transform: scaleX(-1);
+    background-image: url('img/detenidov.gif');
+}
+
+@keyframes sincabe{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1001px;
+    }
+}
+
+@media (min-width: 320px) {
+
+}
+@media (min-width: 640px) {
+
+}
+@media (min-width: 1025px) {
+
+}
+@media (min-width: 1280px) {
+    
+}
