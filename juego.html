@@ -5,16 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/juego.css">
+    <link href="estilos.css" type="text/css" rel="stylesheet">
     <title>MortalDev</title>
 </head>
-<body>
+<body onload="addName()">
+
+    <audio id="audio" autoplay loop>
+        <source src="./src/sounds/Musica M.K.mp3" type="audio/mpeg">
+    </audio>
+
     <section class="containerCounter">
         <span class="counter"></span>
     </section>
     
     <div class="player-names">
         <h2>YOU</h2>
-        <h2>List Name</h2>
+        <h2 id="namePlayers"></h2>
     </div>
     <div class="live-bars-container">
         <div class="life-bar">
@@ -26,16 +32,24 @@
         </div>
     </div>
     
-
-    <script src="./js/juego.js"></script>
-    <link href="estilos.css" type="text/css" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
     <div>
         <div class="detenido" id="detenido">
+    <section class="fight-zone">
+        <div class="fight-left-zone">
+            <div class="detenido" id="detenido">
 
+            </div>
         </div>
+        <div class="fight-right-zone">
+            <div class="detenidov" id="detenidov">
+
+            </div>
+        </div>
+    </section>
+    <div>
+        <!-- <div class="detenido" id="detenido">
+
+        </div> -->
         <div class="pelea" id="pelea">
             
         </div>
@@ -48,15 +62,18 @@
         </div>        
     </div>
     <div>
-        <div class="detenidov" id="detenidov">
+        <!-- <div class="detenidov" id="detenidov">
 
-        </div>
+        </div> -->
         <div class="victima" id="victimagol">
 
         </div>
-        <div class="victima3">
 
+        <div class="containerVictima3">
+        <div class="victima3">
         </div>
+        </div>
+
         <div class="victima2">
 
         </div>        
@@ -64,22 +81,11 @@
 
         </div>        
     </div>
+
     <script src="animacion.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/juego.css">
-    <title>MortalDev</title>
-</head>
-<body>
-
-    <span lass="counter"></span>
-
     <script src="./js/juego.js"></script>
+    <script src="./js/script.js"></script>
+
+
 </body>
 </html>

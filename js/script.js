@@ -12,7 +12,7 @@ let nombres = document.getElementById('nombres');
 let addB = document.getElementById('addBoton');
 
 let play = document.getElementById('play');
-
+let playButton = document.getElementById('playButton');
 
 
 addB.addEventListener("click", (e) => {
@@ -61,3 +61,19 @@ function deleteButon(){
         });
     });
 
+
+    function goToJuegoHtml(){
+        if(playersBeta.length >= 1){
+            playButton.setAttribute("href", "../juego.html");
+        }
+    }
+
+    /* Agregando los jugadores a la barra */
+
+    let prueba = [1,2,3,4,5,6];
+
+    function addName() {
+        let namesPlayers = document.getElementById("namePlayers");
+        namesPlayers.innerText = prueba;
+    }
+    
