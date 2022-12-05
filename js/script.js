@@ -67,6 +67,12 @@ function deleteButon(){
             playButton.setAttribute("href", "../juego.html");
         }
     }
+    let gameAduio = new Audio('../src/sounds/mortal-kombat-round-one.mp3');
+    const playGameSoung = () =>{
+        gameAduio.Play();
+    }
+
+
 
     /* Agregando los jugadores a la barra */
 
