@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(/src/images/Background1.jfif);
+    background-image: url(../src/images/mortal-kombat.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -14,17 +14,17 @@ body {
 
 @font-face {
     font-family: mortalK1;
-    src: url(/css/mk1.ttf);
+    src: url(./mk1.ttf);
 }
 
 @font-face {
     font-family: mortalK2;
-    src: url(/css/mk2.ttf);
+    src: url(./mk2.ttf);
 }
 
 @font-face {
     font-family: mortalK3;
-    src: url(/css//MK4.TTF);
+    src: url(./MK4.TTF);
 }
 h1 {
     font-size: 40px;
