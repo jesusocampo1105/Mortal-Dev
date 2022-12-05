@@ -86,12 +86,12 @@
 }
 
 .victima2{
-    height: 200px;
-    width: 62px;
+    height: 370px;
+    width: 190px;
     transform: scaleX(-1);
-    background-image: url('img/victima2.png');
+    background-image: url('img/victima2(720).png');
     background-repeat: no-repeat;
-    animation: electrocutada .6s steps(4) 3;
+    animation: electrocutada .6s steps(4) infinite;
     display: none;
 }
 
@@ -100,7 +100,7 @@
         background-position-x: 0;
     }
     100%{
-        background-position-x: -254px;
+        background-position-x: -770px;
     }
 }
 
