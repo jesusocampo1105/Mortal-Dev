@@ -17,10 +17,10 @@
 }
 
 .poder{
-    height: 200px;
-    width: 80px;
+    height: 370px;
+    width: 240px;
     padding-left: -40px;
-    background-image: url('img/poder.png');
+    background-image: url('img/poder(720).png');
     background-repeat: no-repeat;
     animation: lanzamiento 0.5s steps(4) paused;
     display: none;    
@@ -35,7 +35,7 @@
         background-position-x: 0;
     }
     100%{
-        background-position-x: -324px;
+        background-position-x: -937px;
     }
 }
 
@@ -105,10 +105,10 @@
 }
 
 .victima3{
-    height: 200px;
-    width: 62px;
+    height: 370px;
+    width: 200px;
     transform: scaleX(-1);
-    background-image: url('img/victima3.png');
+    background-image: url('img/victima3(720).png');
     background-repeat: no-repeat;
     animation: noqueado 1s steps(7) infinite;
 }
@@ -118,7 +118,7 @@
         background-position-x: 0;
     }
     100%{
-        background-position-x: -490px;
+        background-position-x: -1395px;
     }
 }
 
@@ -132,10 +132,11 @@
 }
 
 .detenidov{
-    height: 130px;
-    width: 70px;
+    height: 375px;
+    width: 200px;
     transform: scaleX(-1);
     background-image: url('img/detenidov.gif');
+    background-size: 100%;
 }
 
 @keyframes sincabe{
