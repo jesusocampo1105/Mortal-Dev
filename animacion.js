@@ -6,7 +6,7 @@ var detenidov = document.getElementById("detenidov");
 var victimagol = document.getElementById("victimagol");
 var rayos = document.getElementById("rayos");
 var electrocutado = document.getElementById("electrocutado");
-
+var next = document.getElementById("next-button");
 
 function detener(){
     detenidog.style.display = 'none';
@@ -28,7 +28,7 @@ function lanzar(){
             electrocutado.style.display = 'block';
             personaje.classList.add('pause');
             boton.style.display = 'none';
-        
+            next.
         /*punos.classList.remove('pause');
         this.value = 'Kill';*/
     }
@@ -37,3 +37,7 @@ function lanzar(){
 if(punos.classList && punos && boton){
     boton.addEventListener("click", lanzar);  
 }
+
+next.addEventListener('click', (e)=> {
+    lanzar.repeat();
+})

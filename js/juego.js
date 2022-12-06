@@ -16,7 +16,7 @@ let tiempo = setInterval(() =>{
 
 
 const launchPopUp = () => {
-
+    
 }
 
 const playGameSong = () => {
@@ -24,4 +24,5 @@ const playGameSong = () => {
     // mkSong.play(); 
     mkSong.volume = 0.2; 
 }
+
 

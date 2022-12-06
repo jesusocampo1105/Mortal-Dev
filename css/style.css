@@ -25,6 +25,7 @@ li button{
     font-size: 10px;
     transform: scale(0.5);
     margin-top: -15px;
+    overflow: hidden;
 }
 @font-face {
     font-family: mortalK1;
