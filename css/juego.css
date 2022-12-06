@@ -19,6 +19,7 @@ body{
 }
 
 .player-names{
+    margin-top: -30px;
     display: flex;
     justify-content: space-around;
 }
@@ -86,7 +87,7 @@ div.game-buttons{
 }
 #next-button{
     font-size: 3em;
-    width: 8%;
+    width: 14%;
     display: block;
     color: #ffffff;
     border: solid #ffffff 3px;
@@ -95,8 +96,9 @@ div.game-buttons{
     font-family: "mortal-kombat-4";
 }
 .kill-button{
+    margin-top: -32px;
     font-size: 3em;
-    width: 8%;
+    width: 16%;
     display: block;
     color: #ffffff;
     border: solid #ffffff 3px;
@@ -135,6 +137,9 @@ section.fight-zone{
     div.life-bar-changing{
         width: 100%;
     }
+    .kill-button{
+        font-size: 2em;
+    }
 }  
 
 @media (min-width: 640px) {
@@ -142,7 +147,7 @@ section.fight-zone{
         font-size: 266%;
     }
     .player-names h2{
-        font-size: 20px;
+        font-size: 25px;
     }
 }  
 

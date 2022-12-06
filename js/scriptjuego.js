@@ -1,5 +1,3 @@
-
-
 /* Guardar en localStorage array de nombres */
 
 function obtenerStorage(){
@@ -10,11 +8,10 @@ obtenerStorage()
 
 let finalplayers = final;
 
-        /* Agregando los jugadores a la barra */
-        let test = document.querySelector("#namePlayers");
+        /* Agregando los jugadores a la barra de vida*/
+        let test = document.getElementById("namePlayers");
 
         function viewName() {
-        /* let nameRandom = finalplayers[Math.floor(Math.random() * finalplayers.length)] */
         let nameRandom = finalplayers[0]
         test.innerHTML = nameRandom
         };

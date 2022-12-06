@@ -30,8 +30,10 @@ const playGameSong = () => {
     // mkSong.play(); 
     mkSong.volume = 0.2; 
 }
-const playGameSon = () => {
-  const mSong = new Audio("../src/sounds/Musica M.K.mp3"); 
-  mSong.play(); 
-  mSong.volume = 0.2; 
-}
+let audio=document.querySelector(".kill-button")
+boton.addEventListener("click",()=>{
+  let etiquetaaudio=document.createElement("audio")
+  etiquetaaudio.setAttribute("src", "src/sounds/Golpe.mp3")
+    etiquetaaudio.playbackRate = 1.2;
+    etiquetaaudio.play()
+})

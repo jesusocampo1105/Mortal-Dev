@@ -1,7 +1,5 @@
-
     let playersBeta = [];
     let playersDelete = [];
-    
     let players = [];
     
     let cont = 0;
@@ -27,11 +25,10 @@
         p.textContent = text;
         li.appendChild(p);
         nombres.appendChild(li);
-    
         playersBeta.push(nombre.value);
         cont += 1
         nombre.value = "";
-    }
+        }
     });
     
     
