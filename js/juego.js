@@ -15,9 +15,12 @@ let tiempo = setInterval(() =>{
     
 }, 1000);
 
+<<<<<<< HEAD
 const launchPopUp = () => {
 
 }
 
 const mkSong = new Audio("../src/sounds/Musica M.K.mp3"); ;
 mkSong.Play(); 
+=======
+>>>>>>> jesus

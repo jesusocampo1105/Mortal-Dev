@@ -8,6 +8,7 @@
     <link href="estilos.css" type="text/css" rel="stylesheet">
     <title>MortalDev</title>
 </head>
+
 <body onload="playGameSong()">
     <section class="containerCounter">
         <span class="counter"></span>
@@ -15,7 +16,7 @@
     
     <div class="player-names">
         <h2>YOU</h2>
-        <h2>List Name</h2>
+        <h2 id="namePlayers"></h2>
     </div>
     <div class="live-bars-container">
         <div class="life-bar">
@@ -26,6 +27,9 @@
             <div class="life-bar-filling"></div>
         </div>
     </div>
+    
+    <div>
+        <div class="detenido" id="detenido">
     <section class="fight-zone">
         <div class="fight-left-zone">
             <div class="detenido" id="detenido">
@@ -64,9 +68,12 @@
         <div class="victima" id="victimagol">
 
         </div>
-        <div class="victima3">
 
+        <div class="containerVictima3">
+        <div class="victima3">
         </div>
+        </div>
+
         <div class="victima2">
 
         </div>        
@@ -76,6 +83,9 @@
     </div>
     <script src="animacion.js"></script>
     <script src="./js/juego.js"></script>
+    <script src="./js/script.js"></script>
+
+
     <script src="./js/script.js"></script>
     <script src="./js/scriptjuego.js"></script>
 </body>
