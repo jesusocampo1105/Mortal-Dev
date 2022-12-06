@@ -46,6 +46,7 @@
     background-image: url('img/rayos.png');
     background-repeat: no-repeat;
     animation: luces 1.5s steps(10) forwards;
+    display: none;    
 }
 
 @keyframes luces{
@@ -54,7 +55,7 @@
     }
     100%{
         background-position-x: -828px;
-        transform: translateX(100%) ;
+        transform: translateX(100%);
     }
 }
 
