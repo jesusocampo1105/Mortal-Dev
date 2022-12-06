@@ -72,7 +72,7 @@ div.life-bar-filling{
 .counter{
     color: white;
     margin: 46%;
-    font-size: 347%;
+    font-size: 200%;
 
     font-family: mortalK1;
 }
@@ -80,11 +80,6 @@ div.life-bar-filling{
     text-align: center;
 }
 
-.counter{
-    color: blue;
-    margin: 50%;
-    font-size: 347%;
-}
 div.game-buttons{
     display: flex;
     justify-content: space-around;
@@ -99,7 +94,7 @@ div.game-buttons{
     background-color: transparent;
     font-family: "mortal-kombat-4";
 }
-#kill-button{
+.kill-button{
     font-size: 3em;
     width: 8%;
     display: block;
@@ -110,11 +105,16 @@ div.game-buttons{
     font-family: "mortal-kombat-4";
 }
 
-#next-button:hover, #kill-button:hover{
+#next-button:hover, .kill-button:hover{
     cursor: pointer;
     border-color: #C80000;
     color: #C80000;
 }
+section.fight-zone{
+    display: flex;
+    justify-content: space-around;
+}
+
 
 @media (min-width: 320px) {
     .counter{
