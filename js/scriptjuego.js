@@ -15,4 +15,4 @@ let finalplayers = final;
         let nameRandom = finalplayers[0]
         test.innerHTML = nameRandom
         };
-        viewName()
+        viewName();

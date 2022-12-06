@@ -12,7 +12,7 @@
     
     let play = document.getElementById('play');
     let playButton = document.getElementById('playButton');
-    
+    let lifeBar = document.querySelector();
     
     addB.addEventListener("click", (e) => {
         e.preventDefault();

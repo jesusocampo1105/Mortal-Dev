@@ -106,6 +106,15 @@
     }
 }
 
+#victima3{
+    height: 370px;
+    width: 200px;
+    transform: scaleX(-1);
+    background-image: url('img/victima3(720).png');
+    background-repeat: no-repeat;
+    animation: noqueado 1s steps(7) infinite;
+    display: none;
+}
 .victima3{
     height: 370px;
     width: 200px;
@@ -113,8 +122,8 @@
     background-image: url('img/victima3(720).png');
     background-repeat: no-repeat;
     animation: noqueado 1s steps(7) infinite;
+    display: none;
 }
-
 @keyframes noqueado{
     0%{
         background-position-x: 0;
