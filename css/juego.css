@@ -1,16 +1,3 @@
-
-@media (min-width: 320px) {
-
-}
-@media (min-width: 640px) {
-
-}
-@media (min-width: 1025px) {
-
-}
-@media (min-width: 1280px) {
-    
-}
 body{
     background-image: url(../src/images/LandMobile.png);
     background-size: cover;
@@ -37,6 +24,11 @@ body{
 }
 .player-names h2{
     color: #ffffff;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    font-family: mortal-kombat-4;
+
     font-family: mortalK1;
 }
 
@@ -78,15 +70,53 @@ div.life-bar-filling{
 
 /* Counter style */
 .counter{
-    color: white;
+    color: #ffffff;
     margin: 46%;
-    font-size: 347%;
-
+    font-size: 196%;
     font-family: mortalK1;
 }
 .containerCounter{
     text-align: center;
 }
+
+<<<<<<< HEAD
+.counter{
+    color: blue;
+    margin: 50%;
+    font-size: 347%;
+}
+div.game-buttons{
+    display: flex;
+    justify-content: space-around;
+}
+#next-button{
+    font-size: 3em;
+    width: 8%;
+    display: block;
+    color: #ffffff;
+    border: solid #ffffff 3px;
+    border-radius: 4px;
+    background-color: transparent;
+    font-family: "mortal-kombat-4";
+}
+#kill-button{
+    font-size: 3em;
+    width: 8%;
+    display: block;
+    color: #ffffff;
+    border: solid #ffffff 3px;
+    border-radius: 4px;
+    background-color: transparent;
+    font-family: "mortal-kombat-4";
+}
+
+#next-button:hover, #kill-button:hover{
+    cursor: pointer;
+    border-color: #C80000;
+    color: #C80000;
+}
+=======
+>>>>>>> jesus
 
 @media (min-width: 320px) {
     .counter{
@@ -94,6 +124,18 @@ div.life-bar-filling{
     }
     .player-names h2{
         font-size: 14px;
+    }
+    div.you-life-bar{
+        display: none;
+    }
+    div.player-names .you-text{
+        display: none;
+    }
+    div.player-names h2{
+        width: 100%;
+    }
+    div.life-bar-changing{
+        width: 100%;
     }
 }  
 
