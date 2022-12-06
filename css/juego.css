@@ -50,7 +50,7 @@ div.life-bar-filling{
     background-color: #C80000;
     border-radius: 100px;
 }
-.life-bar:nth-child(2) .life-bar-filling{
+ .xd{
     animation: life 4s forwards;
 }
 @keyframes life{

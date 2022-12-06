@@ -1,27 +1,4 @@
 
-        /* Agregando los jugadores a la barra */
-    
-    /* let prueba = [1,2,3,4,5,6];
-    let test = document.querySelector("#namePlayers");
-    function viewName() {
-        
-    let nameRandom = prueba[Math.floor(Math.random() * prueba.length)]
-    test.innerHTML = nameRandom
-    nameRandom -= nameRandom
-    } */
-
-
-  /*   let prueba = [1,2,3,4,5,6];
-    let test = document.querySelector("#namePlayers");
-    function viewName() {
-    test.innerHTML = prueba[0]
-    console.log(prueba)
-    }
-    prueba.shift(0)
-    viewName() */
-
-
-
     let playersBeta = [];
     let playersDelete = [];
     
@@ -116,8 +93,6 @@
             }
         }
     
-    
-        
         let gameAduio = new Audio('../src/sounds/mortal-kombat-round-one.mp3');
         const playGameSoung = () =>{
             gameAduio.Play();

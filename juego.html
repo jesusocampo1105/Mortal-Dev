@@ -23,7 +23,7 @@
         </div>
         
         <div class="life-bar">
-            <div class="life-bar-filling"></div>
+            <div class="life-bar-filling" id="xd"  ></div>
         </div>
     </div>
     <section class="fight-zone">
@@ -39,8 +39,9 @@
         </div>
     </section>
     <div class="game-buttons">
-        <button id="next-button">NEXT</button>
-        <input type="button" id="pausa" class="kill-button" value="KILL">
+        <button id="next-button" style="display: none;">NEXT</button>
+        <input type="button" id="pausa" class="kill-button" value="KILL" onclick="playGameSon">
+       
     </div>
     <div>
         <div class="pelea" id="pelea">
@@ -71,6 +72,7 @@
 
         </div>        
     </div>
+
     <script src="animacion.js"></script>
     <script src="./js/juego.js"></script>\
     <script src="./js/scriptjuego.js"></script>

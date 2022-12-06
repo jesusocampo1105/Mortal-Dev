@@ -11,18 +11,27 @@ let tiempo = setInterval(() =>{
         alert("Se te acabo el tiempo");
         clearInterval(tiempo)
     }
-    
 }, 1000);
 
 
-const launchPopUp = () => {
-    
-}
+function mostrarPopUp(url, ancho, alto, posicionX, posicionY) {
+    const popUp = window.open(
+      url, 
+      "", 
+      `width=${ancho},height=${alto},left=${posicionX},top=${posicionY}`
+    );
+    if (popUp) {
+      popUp.focus();
+    }
+  }
 
 const playGameSong = () => {
     const mkSong = new Audio("../src/sounds/Musica M.K.mp3"); 
     // mkSong.play(); 
     mkSong.volume = 0.2; 
 }
-
-
+const playGameSon = () => {
+  const mSong = new Audio("../src/sounds/Musica M.K.mp3"); 
+  mSong.play(); 
+  mSong.volume = 0.2; 
+}
