@@ -42,7 +42,7 @@ let playButton = document.getElementById('playButton');
 addB.addEventListener("click", (e) => {
     e.preventDefault();
     const text = nombre.value;
-
+    if (text !== ""){
     const li = document.createElement("li");
     li.appendChild(deleteButon());
     const p = document.createElement("p");
@@ -54,7 +54,30 @@ addB.addEventListener("click", (e) => {
     playersBeta.push(nombre.value);
     cont += 1
     nombre.value = "";
+}
 });
+
+
+document.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        const text = nombre.value;
+        if (text !== ""){
+            const li = document.createElement("li");
+            li.appendChild(deleteButon());
+            const p = document.createElement("p");
+            li.setAttribute('id', cont)
+            p.textContent = text;
+            li.appendChild(p);
+            nombres.appendChild(li);
+        
+            playersBeta.push(nombre.value);
+            cont += 1
+            nombre.value = "";
+        }
+    }
+});
+
+
 
 
 function deleteButon(){
