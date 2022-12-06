@@ -33,3 +33,7 @@ function lanzar(){
         this.value = 'Kill';*/
     }
 }
+
+if(punos.classList && punos && boton){
+    boton.addEventListener("click", lanzar);  
+}
