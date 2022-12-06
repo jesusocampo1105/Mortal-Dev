@@ -1,7 +1,7 @@
 .pelea{
-    height: 140px;
-    width: 126px;
-    background-image: url('img/golpes.png');
+    height: 370px;
+    width: 325px;
+    background-image: url('img/golpes(720).png');
     background-repeat: no-repeat;
     animation: golpe 1s steps(9) paused;
     display: none;    
@@ -12,15 +12,15 @@
         background-position-x: 0;
     }
     100%{
-        background-position-x: -1116px;
+        background-position-x: -2971px;
     }
 }
 
 .poder{
-    height: 200px;
-    width: 80px;
+    height: 370px;
+    width: 240px;
     padding-left: -40px;
-    background-image: url('img/poder.png');
+    background-image: url('img/poder(720).png');
     background-repeat: no-repeat;
     animation: lanzamiento 0.5s steps(4) paused;
     display: none;    
@@ -35,7 +35,7 @@
         background-position-x: 0;
     }
     100%{
-        background-position-x: -324px;
+        background-position-x: -937px;
     }
 }
 
@@ -46,6 +46,7 @@
     background-image: url('img/rayos.png');
     background-repeat: no-repeat;
     animation: luces 1.5s steps(10) forwards;
+    display: none;    
 }
 
 @keyframes luces{
@@ -55,23 +56,25 @@
     100%{
         background-position-x: -828px;
         transform: translateX(100%) ;
+        transform: translateX(100%);
     }
 }
 
 .detenido{
-    height: 140px;
-    width: 77px;
+    height: 370px;
+    width: 200px;
     background-image: url('img/detenido.gif');
+    background-size: 100%;
 }
 
 .victima{
-    height: 200px;
-    width: 90px;
+    height: 370px;
+    width: 230px;
     transform: scaleX(-1);
-    background-image: url('img/victima1.png');
+    background-image: url('img/victima1(720).png');
     background-repeat: no-repeat;
     animation: golpiza .5s steps(4) 2;
-    display: none;    
+    display: none;      
 }
 
 @keyframes golpiza{
@@ -79,17 +82,18 @@
         background-position-x: 0;
     }
     100%{
-        background-position-x: -380px;
+        background-position-x: -1019px;        
     }
 }
 
 .victima2{
-    height: 200px;
-    width: 62px;
+    height: 370px;
+    width: 190px;
     transform: scaleX(-1);
-    background-image: url('img/victima2.png');
+    background-image: url('img/victima2(720).png');
     background-repeat: no-repeat;
     animation: electrocutada .6s steps(4) infinite;
+    display: none;
 }
 
 @keyframes electrocutada{
@@ -97,15 +101,15 @@
         background-position-x: 0;
     }
     100%{
-        background-position-x: -254px;
+        background-position-x: -770px;
     }
 }
 
 .victima3{
-    height: 200px;
-    width: 62px;
+    height: 370px;
+    width: 200px;
     transform: scaleX(-1);
-    background-image: url('img/victima3.png');
+    background-image: url('img/victima3(720).png');
     background-repeat: no-repeat;
     animation: noqueado 1s steps(7) infinite;
 }
@@ -115,24 +119,17 @@
         background-position-x: 0;
     }
     100%{
-        background-position-x: -490px;
+        background-position-x: -1395px;
     }
 }
 
 .victima4{
-    height: 200px;
-    width: 100px;
+    height: 370px;
+    width: 145px;
     transform: scaleX(-1);
-    background-image: url('img/victima4.png');
+    background-image: url('img/victima4(720).png');
     background-repeat: no-repeat;
-    animation: sincabe 1.5s steps(10) infinite;
-}
-
-.detenidov{
-    height: 130px;
-    width: 70px;
-    transform: scaleX(-1);
-    background-image: url('img/detenidov.gif');
+    animation: sincabe 1s steps(4) infinite;
 }
 
 @keyframes sincabe{
@@ -140,19 +137,32 @@
         background-position-x: 0;
     }
     100%{
-        background-position-x: -1001px;
+        background-position-x: -611px;
     }
 }
 
-@media (min-width: 320px) {
-
+.victima5{
+    height: 370px;
+    width: 395px;
+    transform: scaleX(-1);
+    background-image: url('img/victima5(720).png');
+    background-repeat: no-repeat;
+    animation: muerto 1s steps(7) infinite;
 }
-@media (min-width: 640px) {
 
+@keyframes muerto{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -2809px;
+    }
 }
-@media (min-width: 1025px) {
 
-}
-@media (min-width: 1280px) {
-    
+.detenidov{
+    height: 375px;
+    width: 200px;
+    transform: scaleX(-1);
+    background-image: url('img/detenidov.gif');
+    background-size: 100%;
 }
