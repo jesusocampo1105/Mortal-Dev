@@ -70,16 +70,16 @@ div.life-bar-filling{
 
 /* Counter style */
 .counter{
-    color: white;
+    color: #ffffff;
     margin: 46%;
-    font-size: 347%;
-
+    font-size: 196%;
     font-family: mortalK1;
 }
 .containerCounter{
     text-align: center;
 }
 
+<<<<<<< HEAD
 .counter{
     color: blue;
     margin: 50%;
@@ -116,6 +116,8 @@ div.game-buttons{
     border-color: #C80000;
     color: #C80000;
 }
+=======
+>>>>>>> jesus
 
 @media (min-width: 320px) {
     .counter{

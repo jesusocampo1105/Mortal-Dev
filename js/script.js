@@ -1,3 +1,27 @@
+
+        /* Agregando los jugadores a la barra */
+    
+    /* let prueba = [1,2,3,4,5,6];
+    let test = document.querySelector("#namePlayers");
+    function viewName() {
+        
+    let nameRandom = prueba[Math.floor(Math.random() * prueba.length)]
+    test.innerHTML = nameRandom
+    nameRandom -= nameRandom
+    } */
+
+
+  /*   let prueba = [1,2,3,4,5,6];
+    let test = document.querySelector("#namePlayers");
+    function viewName() {
+    test.innerHTML = prueba[0]
+    console.log(prueba)
+    }
+    prueba.shift(0)
+    viewName() */
+
+
+
 let playersBeta = [];
 let playersDelete = [];
 
@@ -17,7 +41,7 @@ let playButton = document.getElementById('playButton');
 addB.addEventListener('click', (e) => {
     e.preventDefault();
     const text = nombre.value;
-
+    if (text !== ""){
     const li = document.createElement("li");
     li.appendChild(deleteButon());
     const p = document.createElement("p");
@@ -26,6 +50,7 @@ addB.addEventListener('click', (e) => {
     li.appendChild(p);
     nombres.appendChild(li);
 
+<<<<<<< HEAD
     playersBeta.push(
         {
             id: cont,
@@ -38,6 +63,38 @@ addB.addEventListener('click', (e) => {
 
 
 function deleteButon() {
+=======
+    playersBeta.push(nombre.value);
+    cont += 1
+    nombre.value = "";
+}
+});
+
+
+document.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        const text = nombre.value;
+        if (text !== ""){
+            const li = document.createElement("li");
+            li.appendChild(deleteButon());
+            const p = document.createElement("p");
+            li.setAttribute('id', cont)
+            p.textContent = text;
+            li.appendChild(p);
+            nombres.appendChild(li);
+        
+            playersBeta.push(nombre.value);
+            cont += 1
+            nombre.value = "";
+        }
+    }
+});
+
+
+
+
+function deleteButon(){
+>>>>>>> 9be67ddf1fd626c3e7cd7fb772d811256884ad8f
     const botonDelete = document.createElement('button');
 
     botonDelete.textContent = 'X';
@@ -52,6 +109,7 @@ function deleteButon() {
     return botonDelete;
 }
 
+<<<<<<< HEAD
 play.addEventListener('click', (e) => {
     for (i = 0; i < playersDelete.length; i++) {
         let a = playersDelete[i];
@@ -84,3 +142,38 @@ function addName() {
     let namesPlayers = document.getElementById("namePlayers");
     namesPlayers.innerText = "";
 }
+=======
+    play.addEventListener('click', (e) => {
+        for(i=0 ; i<playersDelete.length; i++ ){
+            let a = playersDelete[i];
+            playersBeta[a] = null
+        }
+
+        function guardarStorage(){
+            localStorage.setItem('list', JSON.stringify(playersBeta ));
+        }
+        guardarStorage();
+
+
+    players = playersBeta.filter(function(x) {
+            return x !== null;
+        });
+    });
+
+
+    function goToJuegoHtml(){
+        if(playersBeta.length >= 1){
+            playButton.setAttribute("href", "../juego.html");
+        }
+    }
+
+
+    
+    let gameAduio = new Audio('../src/sounds/mortal-kombat-round-one.mp3');
+    const playGameSoung = () =>{
+        gameAduio.Play();
+    }
+
+
+
+>>>>>>> 9be67ddf1fd626c3e7cd7fb772d811256884ad8f

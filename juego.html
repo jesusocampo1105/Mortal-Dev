@@ -8,13 +8,8 @@
     <link href="estilos.css" type="text/css" rel="stylesheet">
     <title>MortalDev</title>
 </head>
-<body onload="goToJuegoHtml()">
-    <section class="containerCounter"> </section>
 
-    <audio id="audio" autoplay loop>
-        <source src="./src/sounds/Musica M.K.mp3" type="audio/mpeg">
-    </audio>
-
+<body onload="playGameSong()">
     <section class="containerCounter">
         <span class="counter"></span>
     </section>
@@ -61,10 +56,10 @@
         <div class="poder" id="poder">
             
         </div>
-        <div><input type="button" id="pausa" value="Kill"></div>
-        <div class="rayos">
+        <div class="rayos" id="rayos">
             
-        </div>        
+        </div>
+        <div><input type="button" id="pausa" value="Kill"></div>                
     </div>
     <div>
         <!-- <div class="detenidov" id="detenidov">
@@ -76,20 +71,21 @@
 
         <div class="containerVictima3">
         <div class="victima3">
-        </div>
-        </div>
 
-        <div class="victima2">
+        </div>
+        <div class="victima2" id="electrocutado">
 
         </div>        
         <div class="victima4">
+
+        </div>
+        <div class="victima5">
 
         </div>        
     </div>
     <script src="animacion.js"></script>
     <script src="./js/juego.js"></script>
     <script src="./js/script.js"></script>
-
-
+    <script src="./js/scriptjuego.js"></script>
 </body>
 </html>

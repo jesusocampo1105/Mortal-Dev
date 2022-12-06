@@ -4,15 +4,13 @@ var punos = document.getElementById("pelea");
 var detenidog = document.getElementById("detenido");
 var detenidov = document.getElementById("detenidov");
 var victimagol = document.getElementById("victimagol");
+var rayos = document.getElementById("rayos");
+var electrocutado = document.getElementById("electrocutado");
 
 
 function detener(){
     detenidog.style.display = 'none';
     detenidov.style.display = 'none';    
-}
-
-function noqueado(){
-    victimagol.style.display = 'none';
 }
 
 function lanzar(){
@@ -23,9 +21,11 @@ function lanzar(){
         punos.classList.add('pause');
         this.value = 'Finish Him';        
     }else if(this.value == 'Finish Him'){
-            noqueado();
             pelea.style.display = 'none';
+            victimagol.style.display = 'none';
             personaje.style.display = 'block';
+            rayos.style.display = 'block';
+            electrocutado.style.display = 'block';
             personaje.classList.add('pause');
             boton.style.display = 'none';
         
