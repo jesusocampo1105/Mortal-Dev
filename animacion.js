@@ -40,6 +40,10 @@ function changeAnimationsnum6(){
 function lanzar(){
     if(this.value == 'KILL'){
         detener();
+        let etiquetaaudio=document.createElement("audio")
+        etiquetaaudio.setAttribute("src", "src/sounds/Golpe.mp3")
+        etiquetaaudio.playbackRate = 1.2;
+        etiquetaaudio.play()
         pelea.style.display = 'block';
         victimagol.style.display = 'block';
         punos.classList.add('pause');
@@ -75,15 +79,15 @@ const mostrarSiguienteNombre = () => {
     if(finalplayers.length > 0){
         let index = 0; 
         test.innerHTML = finalplayers[index];
-        finalplayers.shift(index,1);
-
+        finalplayers.splice(index,1);
+        console.log(finalplayers)
     }else{
         location.href = "./final.html";
     }
 }
 
 next.addEventListener('click', (e) => {
-    location.reload()
+    // location.reload()
     mostrarSiguienteNombre(); 
 })
 
@@ -92,3 +96,4 @@ next.addEventListener('click', (e) => {
         
     }
 }*/
+
