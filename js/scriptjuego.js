@@ -12,7 +12,7 @@ let finalplayers = final;
         let test = document.getElementById("namePlayers");
 
         function viewName() {
-        let nameRandom = finalplayers[0]
-        test.innerHTML = nameRandom
+        let nameRandom = finalplayers[0];
+        test.innerHTML = nameRandom;
         };
         viewName();

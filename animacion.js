@@ -23,14 +23,19 @@ function changeAnimationsnum2(){
     victimagol.classList.remove("victima3")
     victimagol.classList.remove("victima")
     victimagol.classList.add("victima2")
-    setInterval( victimagol.classList.add("victima4"), 8000)
     }
 function changeAnimationsnum3(){
         punos.classList.add("poder")
-       
-        
     }
-
+function changeAnimationsnum4(){
+        victimagol.classList.add("victima4")
+}
+function changeAnimationsnum5(){
+    victimagol.classList.add("victima5")
+}
+function changeAnimationsnum6(){
+    victimagol.classList.add("victima6")
+}
 
 function lanzar(){
     if(this.value == 'KILL'){
@@ -39,19 +44,23 @@ function lanzar(){
         victimagol.style.display = 'block';
         punos.classList.add('pause');
         setTimeout(changeAnimations, 1000)
-        this.value = 'FINISH HIM';        
+        this.value = 'FINISH HIM';   
+             
     }else if(this.value == 'FINISH HIM'){
+            const finishHimAudio = new Audio('./src/sounds/mortal-kombat-finish-her.mp3'); 
+            finishHimAudio.play(); 
             boton.style.display = 'none';
             next.style.display = 'block';
             changeAnimationsnum3()
-            setTimeout(changeAnimationsnum2, 1000)
+            setInterval( changeAnimationsnum2, 1000)
+            setInterval( changeAnimationsnum4, 2000)
+            setInterval( changeAnimationsnum5, 3000)
+            setInterval( changeAnimationsnum6, 3900)
             pelea.style.display = 'block';
             personaje.style.display = 'block';
             rayos.style.display = 'block';
             electrocutado.style.display = 'block';
             personaje.classList.add('pause');
-            
-            
             
         /*punos.classList.remove('pause');
         this.value = 'Kill';*/
@@ -64,12 +73,12 @@ if(punos.classList && punos && boton){
 
 const mostrarSiguienteNombre = () => {
     if(finalplayers.length > 0){
-        console.log(finalplayers)
         let index = 0; 
         test.innerHTML = finalplayers[index];
-        finalplayers.splice(index,1);
+        finalplayers.shift(index,1);
+
     }else{
-        // location.href = "./final.html";
+        location.href = "./final.html";
     }
 }
 
