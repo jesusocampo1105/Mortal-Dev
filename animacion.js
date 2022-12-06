@@ -14,13 +14,13 @@ function detener(){
 }
 
 function lanzar(){
-    if(this.value == 'Kill'){
+    if(this.value == 'KILL'){
         detener();
         pelea.style.display = 'block';
         victimagol.style.display = 'block';
         punos.classList.add('pause');
-        this.value = 'Finish Him';        
-    }else if(this.value == 'Finish Him'){
+        this.value = 'FINISH HIM';        
+    }else if(this.value == 'FINISH HIM'){
             pelea.style.display = 'none';
             victimagol.style.display = 'none';
             personaje.style.display = 'block';
