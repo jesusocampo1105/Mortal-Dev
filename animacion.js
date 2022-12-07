@@ -13,7 +13,7 @@ var next = document.getElementById("next-button");
 var victima3 = document.getElementById("desa");
 var home = document.querySelector(".button-playagain");
 var eliminados = document.querySelector(".eliminados-list");
-
+var killPopUp = document.querySelector(".pupUp")
 
 function detener(){
     detenidog.style.display = 'none';
@@ -50,7 +50,6 @@ function changeAnimationsnum7(){
     victimagol.classList.add("victima")
 }
 function lanzar(){
-  
     if(this.value == 'KILL'){
         
         detener()
@@ -134,9 +133,11 @@ const mostrarSiguienteNombre = () => {
 // }
 
 next.addEventListener('click', (e) => {
-    location.reload()
+    mostrarPopUp();
+    location.reload(); 
     mostrarSiguienteNombre();
-    mostrarPopUp("./popUp.html", 400, 400, 100, 100); 
 })
 
-
+const mostrarPopUp = () => {
+    killPopUp.classList.toggle("showpopup");
+}

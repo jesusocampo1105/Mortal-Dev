@@ -1,0 +1,103 @@
+.showpopup{
+    display: inline-block;
+}
+
+@media (min-width: 320px) {
+    .popUp {
+        display: none;
+        margin: 0 auto;
+        width: 330px;
+        margin-top: 55%;
+        justify-content: center;
+        align-items: center;
+        height: 180px;
+        background: linear-gradient(281.16deg, rgba(242, 116, 5, 0.9) 2.22%, rgba(149, 1, 7, 0.9) 99.22%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        position: absolute;
+        left: 25%;
+        top: 25%;
+    }
+
+    .img-calavera {
+        width: 90px;
+        height: 90px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .popUp-text {
+        display: block;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .button-popUp {
+        width: 75px;
+        height: 30px;
+        display: block;
+        margin: 0 auto;
+        border: solid #000000 3px;
+        border-radius: 4px;
+        background-color: transparent;
+        font-family: "mortal-kombat-4";
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 640px) {
+    .popUp {
+        width: 570px;
+        height: 270px;
+        margin-top: 25%;
+    }
+
+    .img-calavera {
+        width: 150px;
+        height: 150px;
+    }
+
+    .popUp-text {
+        font-size: 25px;
+    }
+
+    .button-popUp {
+        width: 100px;
+        height: 45px;
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .popUp {
+        width: 870px;
+        height: 370px;
+        margin-top: 15%;
+    }
+
+    .img-calavera {
+        width: 200px;
+        height: 200px;
+    }
+
+    .popUp-text {
+        font-size: 35px;
+    }
+
+    .button-popUp {
+        width: 150px;
+        height: 65px;
+        font-size: 35px;
+        border: solid #000000 5px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .popUp {
+        margin-top: 14%;
+    }
+}
