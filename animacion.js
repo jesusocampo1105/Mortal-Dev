@@ -87,7 +87,6 @@ function lanzar(){
             personaje.classList.add('pause');
             
             
-           
         /*punos.classList.remove('pause');
         this.value = 'Kill';*/
     }
@@ -100,7 +99,7 @@ if(punos.classList && punos && boton){
 }
 
 const mostrarSiguienteNombre = () => {
-    if(localStorage.list.length > 0){
+    if(localStorage.list.length > 1){
         let index = 0; 
 
         
@@ -113,8 +112,9 @@ const mostrarSiguienteNombre = () => {
         guardarStorage();
         // finalplayers.splice(index,1);
         console.log(localStorage.list)
-    }else if(localStorage.length === undefined){
-        location.href = "./final.html";
+        if (localStorage.list[2] == undefined ){
+            location.href= "./final.html"; 
+        }
     }
 }
 
