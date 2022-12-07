@@ -1,6 +1,7 @@
 let players = JSON.parse(localStorage.getItem("list"))
 
-
+var killPopUp = document.querySelector(".popUp")
+var bar = document.querySelector(".bar2")
 var personaje = document.getElementById("poder");//
 var boton = document.getElementById("pausa");
 var punos = document.getElementById("pelea");
@@ -9,11 +10,12 @@ var detenidov = document.getElementById("detenidov");
 var victimagol = document.getElementById("victimagol");
 var rayos = document.getElementById("rayos");
 var electrocutado = document.getElementById("electrocutado");
-var next = document.getElementById("next-button");
+let next = document.getElementById("nextxd");
 var victima3 = document.getElementById("desa");
 var home = document.querySelector(".button-playagain");
 var eliminados = document.querySelector(".eliminados-list");
-var killPopUp = document.querySelector(".pupUp")
+
+//var buttonPopUp = document.querySelector(bu); 
 
 function detener(){
     detenidog.style.display = 'none';
@@ -49,6 +51,7 @@ function changeAnimationsnum6(){
 function changeAnimationsnum7(){
     victimagol.classList.add("victima")
 }
+
 function lanzar(){
     if(this.value == 'KILL'){
         
@@ -56,19 +59,26 @@ function lanzar(){
         let etiquetaaudio=document.createElement("audio")
         etiquetaaudio.setAttribute("src", "src/sounds/Golpe.mp3")
         etiquetaaudio.playbackRate = 1.2;
-        etiquetaaudio.play()
+        etiquetaaudio.play();
+        bar.classList.add('xd');
         pelea.style.display = 'block';
         victimagol.style.display = 'block';
         punos.classList.add('pause');
         setTimeout(changeAnimations, 1000)
-        this.value = 'FINISH HIM';   
+        this.value = 'FINISH HIM';
              
-    }else if(this.value == 'FINISH HIM'){
+    }
+    else if(this.value == 'FINISH HIM'){
             //this.value = 'NEXT';
-            boton.style.display = 'none';   
-            next.style.display = 'block';
+            boton.style.display = 'none'; 
+            function tardar(){ killPopUp.style.display = 'block';}
+            //killPopUp.style.display = 'block';
+            setInterval( tardar, 4000)
             const finishHimAudio = new Audio('./src/sounds/mortal-kombat-finish-her.mp3'); 
-            finishHimAudio.play(); 
+            finishHimAudio.play();
+            function barradevida(){
+            bar.classList.add('xdd');} 
+            setTimeout(barradevida, 2500); 
             function  audiono(){
             const noooAudio = new Audio('./src/sounds/Nooooo.mp3');
             noooAudio.volume= 0.5
@@ -84,60 +94,55 @@ function lanzar(){
             rayos.style.display = 'block';
             electrocutado.style.display = 'block';
             personaje.classList.add('pause');
-            
-            
+                   
         /*punos.classList.remove('pause');
         this.value = 'Kill';*/
-    }
+            }
 
 }
 
+
+next.addEventListener('click', (e) => {
+    mostrarSiguienteNombre();
+    
+});
 
 if(punos.classList && punos && boton){
     boton.addEventListener("click", lanzar);  
 }
-
 const mostrarSiguienteNombre = () => {
-    if(localStorage.list.length > 1){
+    if(finalplayers.length > 1){
         let index = 0; 
-
-        
         test.innerHTML = finalplayers[index]; 
         finalplayers.shift();
+        location.reload(); 
 
         function guardarStorage(){
             localStorage.setItem('list', JSON.stringify(finalplayers));
         }
-        guardarStorage();
+        guardarStorage();}
         // finalplayers.splice(index,1);
-        console.log(localStorage.list)
-        if (localStorage.list[2] == undefined ){
-            location.href= "./final.html"; 
-        }
-    }
-}
+    else if (finalplayers.length === 1 ) { 
+        document.location.href="final.html"
+        }}
+    
 
 
 // const mostrarSiguienteNombre = () => {
-//     if(finalplayers.length > 0){
+//     if(localStorage.list.length > 0){
 //         let index = 0; 
-//         test.innerHTML =finalplayers[index]; 
-        
-//         // finalplayers.splice(index,1);
-//         console.log(finalplayers)
-        
+//         test.innerHTML = finalplayers[index]; 
+//         finalplayers.shift();
 
-//     }else{
-//         location.href = "./final.html";
+//         function guardarStorage(){
+//             localStorage.setItem('list', JSON.stringify(finalplayers));
+//         }
+//         guardarStorage();
+//         // finalplayers.splice(index,1);
+//         console.log(localStorage.list)
+//         if (localStorage.list[2] == undefined ){
+//             location.href= "./final.html"; 
+//         }
 //     }
 // }
-
-next.addEventListener('click', (e) => {
-    mostrarPopUp();
-    location.reload(); 
-    mostrarSiguienteNombre();
-})
-
-const mostrarPopUp = () => {
-    killPopUp.classList.toggle("showpopup");
-}
+ 

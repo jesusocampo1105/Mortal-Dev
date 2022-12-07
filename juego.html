@@ -20,11 +20,11 @@
     </div>
     <div class="live-bars-container">
         <div class="life-bar">
-            <div class="life-bar-filling"></div>
+            <div class="life-bar-filling bar1"></div>
         </div>
         
         <div class="life-bar">
-            <div class="life-bar-filling" id="xd"  ></div>
+            <div class="life-bar-filling bar2"></div>
         </div>
     </div>
     <section class="fight-zone">
@@ -48,20 +48,22 @@
     </section>
 
 
+    <div class="game-buttons">
+        
+        <input type="button" id="pausa" class="kill-button " value="KILL">
+    </div>
+
     <div class="popUp">
         <img class="img-calavera" src="./src/images/calavera.png" alt="Calavera- Jugador eliminado">
         <p class="popUp-text">Has eliminado a un developer</p>
-        <button class="button-popUp">Next</button>
-    </div>
+        <div class="popUp-button-container">
+          <button id="nextxd" class="button-popUp">NEXT</button>
 
-
-    <div class="game-buttons">
-        <button id="next-button" style="display: none;">NEXT</button>
-        <input type="button" id="pausa" class="kill-button " value="KILL" >
+        </div>
     </div>
 
     <script src="animacion.js"></script>
-    <script src="./js/juego.js"></script>\
+    <script src="./js/juego.js"></script>
     <script src="./js/scriptjuego.js"></script>
     <script src="./js/script.js"></script>
 </body>

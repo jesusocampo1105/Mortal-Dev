@@ -52,7 +52,10 @@ div.life-bar-filling{
     border-radius: 100px;
 }
  .xd{
-    animation: life 4s forwards;
+    animation: life 1.0s forwards;
+}
+.xdd{
+    animation: life2 1.5s forwards;
 }
 @keyframes life{
     0%{
@@ -68,6 +71,15 @@ div.life-bar-filling{
         width: 20%;
     }
 }
+@keyframes life2{
+    0%{
+        width: 20%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
 
 /* Counter style */
 .counter{
@@ -85,16 +97,7 @@ div.game-buttons{
     display: flex;
     justify-content: space-around;
 }
-#next-button{
-    font-size: 3em;
-    width: 14%;
-    display: block;
-    color: #ffffff;
-    border: solid #ffffff 3px;
-    border-radius: 4px;
-    background-color: transparent;
-    font-family: "mortal-kombat-4";
-}
+
 .kill-button{
     margin-top: -32px;
     font-size: 3em;
