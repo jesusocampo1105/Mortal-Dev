@@ -1,27 +1,4 @@
 
-        /* Agregando los jugadores a la barra */
-    
-    /* let prueba = [1,2,3,4,5,6];
-    let test = document.querySelector("#namePlayers");
-    function viewName() {
-        
-    let nameRandom = prueba[Math.floor(Math.random() * prueba.length)]
-    test.innerHTML = nameRandom
-    nameRandom -= nameRandom
-    } */
-
-
-  /*   let prueba = [1,2,3,4,5,6];
-    let test = document.querySelector("#namePlayers");
-    function viewName() {
-    test.innerHTML = prueba[0]
-    console.log(prueba)
-    }
-    prueba.shift(0)
-    viewName() */
-
-
-
 let playersBeta = [];
 let playersDelete = [];
 
@@ -50,20 +27,6 @@ addB.addEventListener('click', (e) => {
     li.appendChild(p);
     nombres.appendChild(li);
 
-<<<<<<< HEAD
-    playersBeta.push(
-        {
-            id: cont,
-            playerName: nombre.value
-        });
-    cont += 1
-    nombre.value = "";
-
-});
-
-
-function deleteButon() {
-=======
     playersBeta.push(nombre.value);
     cont += 1
     nombre.value = "";
@@ -94,7 +57,6 @@ document.addEventListener("keyup", function(event) {
 
 
 function deleteButon(){
->>>>>>> 9be67ddf1fd626c3e7cd7fb772d811256884ad8f
     const botonDelete = document.createElement('button');
 
     botonDelete.textContent = 'X';
@@ -109,7 +71,7 @@ function deleteButon(){
     return botonDelete;
 }
 
-<<<<<<< HEAD
+
 play.addEventListener('click', (e) => {
     for (i = 0; i < playersDelete.length; i++) {
         let a = playersDelete[i];
@@ -142,7 +104,6 @@ function addName() {
     let namesPlayers = document.getElementById("namePlayers");
     namesPlayers.innerText = "";
 }
-=======
     play.addEventListener('click', (e) => {
         for(i=0 ; i<playersDelete.length; i++ ){
             let a = playersDelete[i];
@@ -167,13 +128,3 @@ function addName() {
         }
     }
 
-
-    
-    let gameAduio = new Audio('../src/sounds/mortal-kombat-round-one.mp3');
-    const playGameSoung = () =>{
-        gameAduio.Play();
-    }
-
-
-
->>>>>>> 9be67ddf1fd626c3e7cd7fb772d811256884ad8f

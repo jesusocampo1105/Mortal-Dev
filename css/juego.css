@@ -19,6 +19,7 @@ body{
 }
 
 .player-names{
+    margin-top: -30px;
     display: flex;
     justify-content: space-around;
 }
@@ -50,7 +51,7 @@ div.life-bar-filling{
     background-color: #C80000;
     border-radius: 100px;
 }
-.life-bar:nth-child(2) .life-bar-filling{
+ .xd{
     animation: life 4s forwards;
 }
 @keyframes life{
@@ -72,26 +73,21 @@ div.life-bar-filling{
 .counter{
     color: #ffffff;
     margin: 46%;
-    font-size: 196%;
+    font-size: 200%;
+
     font-family: mortalK1;
 }
 .containerCounter{
     text-align: center;
 }
 
-<<<<<<< HEAD
-.counter{
-    color: blue;
-    margin: 50%;
-    font-size: 347%;
-}
 div.game-buttons{
     display: flex;
     justify-content: space-around;
 }
 #next-button{
     font-size: 3em;
-    width: 8%;
+    width: 14%;
     display: block;
     color: #ffffff;
     border: solid #ffffff 3px;
@@ -99,9 +95,10 @@ div.game-buttons{
     background-color: transparent;
     font-family: "mortal-kombat-4";
 }
-#kill-button{
+.kill-button{
+    margin-top: -32px;
     font-size: 3em;
-    width: 8%;
+    width: 16%;
     display: block;
     color: #ffffff;
     border: solid #ffffff 3px;
@@ -111,13 +108,16 @@ div.game-buttons{
     margin-left: 100%;
 }
 
-#next-button:hover, #kill-button:hover{
+#next-button:hover, .kill-button:hover{
     cursor: pointer;
     border-color: #C80000;
     color: #C80000;
 }
-=======
->>>>>>> jesus
+section.fight-zone{
+    display: flex;
+    justify-content: space-around;
+}
+
 
 @media (min-width: 320px) {
     .counter{
@@ -138,6 +138,9 @@ div.game-buttons{
     div.life-bar-changing{
         width: 100%;
     }
+    .kill-button{
+        font-size: 2em;
+    }
 }  
 
 @media (min-width: 640px) {
@@ -145,7 +148,7 @@ div.game-buttons{
         font-size: 266%;
     }
     .player-names h2{
-        font-size: 20px;
+        font-size: 25px;
     }
 }  
 

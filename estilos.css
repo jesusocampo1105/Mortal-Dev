@@ -1,6 +1,7 @@
 .pelea{
     height: 370px;
     width: 325px;
+    
     background-image: url('img/golpes(720).png');
     background-repeat: no-repeat;
     animation: golpe 1s steps(9) paused;
@@ -56,6 +57,7 @@
     100%{
         background-position-x: -828px;
         transform: translateX(100%);
+        transform: translateX(100%);
     }
 }
 
@@ -104,6 +106,15 @@
     }
 }
 
+#victima3{
+    height: 370px;
+    width: 200px;
+    transform: scaleX(-1);
+    background-image: url('img/victima3(720).png');
+    background-repeat: no-repeat;
+    animation: noqueado 1s steps(7) infinite;
+    display: none;
+}
 .victima3{
     height: 370px;
     width: 200px;
@@ -111,8 +122,8 @@
     background-image: url('img/victima3(720).png');
     background-repeat: no-repeat;
     animation: noqueado 1s steps(7) infinite;
+    display: none;
 }
-
 @keyframes noqueado{
     0%{
         background-position-x: 0;
@@ -146,7 +157,7 @@
     transform: scaleX(-1);
     background-image: url('img/victima5(720).png');
     background-repeat: no-repeat;
-    animation: muerto 1s steps(7) infinite;
+    animation: muerto 1s steps(7) 1;
 }
 
 @keyframes muerto{
@@ -158,23 +169,17 @@
     }
 }
 
+.victima6{
+    height: 370px;
+    width: 395px;
+    transform: scaleX(-1);
+    background-image: url('img/muerto.gif');
+}
+
 .detenidov{
     height: 375px;
     width: 200px;
     transform: scaleX(-1);
     background-image: url('img/detenidov.gif');
     background-size: 100%;
-}
-
-@media (min-width: 320px) {
-
-}
-@media (min-width: 640px) {
-
-}
-@media (min-width: 1025px) {
-
-}
-@media (min-width: 1280px) {
-    
 }
