@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    overflow-x: hidden !important;
 }
 
 body {
@@ -51,7 +50,6 @@ h1 {
 #formulario {
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 25px;
 }
 #formulario h3 {
     text-align: center;
@@ -82,7 +80,7 @@ h1 {
     margin-left: 20px;
     margin-bottom: 14px;
     width: 230px;
-    height: 542px;
+    height: 198px;
     border-radius: 5px;
     font-family: 'mortalK3';
     background: rgba(27, 26, 26, 0.8);
@@ -117,6 +115,9 @@ h1 {
     background-color: transparent;
     border: none;
     font-size: 40px;
+}
+#list{
+    height: 204px;
 }
 
 @media (min-width: 480px) {
@@ -174,6 +175,7 @@ h1 {
         font-size: 20px;
         overflow-y: hidden !important;
     }
+    
 }
 
 @media (min-width: 768px) {
@@ -211,7 +213,7 @@ h1 {
 
     #list #nombres {
         width: 430px;
-        height: 350px;
+        height: 183px;
         margin-bottom: -10px;
     }
 
@@ -380,7 +382,7 @@ h1 {
         font-size: 40px;
         color: #FFF;
         border: 5px solid #FFF;
-        margin-top: 220px;
+        margin-top: 33px;
         margin-bottom: 20px;
     }
 

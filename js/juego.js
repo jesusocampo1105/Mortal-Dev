@@ -27,6 +27,6 @@ function mostrarPopUp(url, ancho, alto, posicionX, posicionY) {
 
 const playGameSong = () => {
     const mkSong = new Audio("../src/sounds/Musica M.K.mp3"); 
-    // mkSong.play(); 
+    mkSong.play(); 
     mkSong.volume = 0.2; 
 }
