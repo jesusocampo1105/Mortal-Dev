@@ -90,6 +90,7 @@
             }
         }
     
+        /* Agregamos audio en el juego con un autoplay */
         let gameAduio = new Audio('../src/sounds/mortal-kombat-round-one.mp3');
         const playGameSoung = () =>{
             gameAduio.Play();

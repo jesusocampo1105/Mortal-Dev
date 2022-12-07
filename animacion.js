@@ -1,7 +1,7 @@
 let players = JSON.parse(localStorage.getItem("list"))
 
 
-var personaje = document.getElementById("poder");
+var personaje = document.getElementById("poder");//
 var boton = document.getElementById("pausa");
 var punos = document.getElementById("pelea");
 var detenidog = document.getElementById("detenido");
@@ -65,7 +65,8 @@ function lanzar(){
         this.value = 'FINISH HIM';   
              
     }else if(this.value == 'FINISH HIM'){
-            //this.value = 'NEXT';   
+            //this.value = 'NEXT';
+            boton.style.display = 'none';   
             next.style.display = 'block';
             const finishHimAudio = new Audio('./src/sounds/mortal-kombat-finish-her.mp3'); 
             finishHimAudio.play(); 
@@ -84,7 +85,7 @@ function lanzar(){
             rayos.style.display = 'block';
             electrocutado.style.display = 'block';
             personaje.classList.add('pause');
-            boton.style.display = 'none';
+            
             
            
         /*punos.classList.remove('pause');
@@ -112,7 +113,7 @@ const mostrarSiguienteNombre = () => {
         guardarStorage();
         // finalplayers.splice(index,1);
         console.log(localStorage.list)
-    }else{
+    }else if(localStorage.length === undefined){
         location.href = "./final.html";
     }
 }
@@ -135,9 +136,7 @@ const mostrarSiguienteNombre = () => {
 next.addEventListener('click', (e) => {
     location.reload()
     mostrarSiguienteNombre();
+    mostrarPopUp("./popUp.html", 400, 400, 100, 100); 
 })
 
-home.addEventListener('click', () => {
-    //location.href="./index.html"
-    mostrarPopUp("./popUp.html", 400, 400, 100, 100)
-}) 
+

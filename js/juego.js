@@ -13,18 +13,6 @@ let tiempo = setInterval(() =>{
     }
 }, 1000);
 
-
-function mostrarPopUp(url, ancho, alto, posicionX, posicionY) {
-    const popUp = window.open(
-      url, 
-      "", 
-      `width=${ancho},height=${alto},left=${posicionX},top=${posicionY}`
-    );
-    if (popUp) {
-      popUp.focus();
-    }
-  }
-
 const playGameSong = () => {
     const mkSong = new Audio("../src/sounds/Musica M.K.mp3"); 
     mkSong.play(); 
