@@ -41,4 +41,3 @@ Para el primer almacenamiento de los nombres, se implementó un array el cual se
 
 ![image](https://user-images.githubusercontent.com/114504563/206083671-7ddcaf74-a59a-407c-9007-68c91ec8c13c.png)
 
-
