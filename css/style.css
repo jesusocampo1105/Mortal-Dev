@@ -270,7 +270,11 @@ h1 {
 
     #list #nombres {
         width: 600px;
+<<<<<<< HEAD
         height: 70px;
+=======
+        height: 343px;
+>>>>>>> 9f8dd6f08245b34b5df24420fd07ab6ce144faee
         margin-bottom: 10px;
     }
 
